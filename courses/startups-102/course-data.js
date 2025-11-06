@@ -63,7 +63,7 @@ const MODULES = [
     title: 'Module 6 · Hiring',
     description: 'You\'re only as strong as the team around you - here\'s how to build a great one.',
     lessons: [
-      { id: 'm6l1', title: 'Jason Fried (Basecamp): do the job first before you hire someone to do it', url: 'https://www.youtube.com/watch?v=4ua5y1PKyxk', duration: '2:36' },
+      { id: 'm6l1', title: 'Jason Fried: do the job first before you hire someone to do it', url: 'https://www.youtube.com/watch?v=4ua5y1PKyxk', duration: '2:36' },
       { id: 'm6l2', title: 'Naval Ravikant: why you should hire high-agency people', url: 'https://www.youtube.com/watch?v=U8srC2ivSJw', duration: '2:55' },
       { id: 'm6l3', title: 'Eric Schmidt: hire the divas', url: 'https://www.youtube.com/watch?v=w5gcf-sNnvI', duration: '0:40' },
       { id: 'm6l4', title: 'Sam Altman: hire for values first, aptitude second, and skills third', url: 'https://www.youtube.com/watch?v=6s9Dy06BiVM', duration: '0:58' },
