@@ -43,7 +43,7 @@ const MODULES = [
       { id: 'm4l1', title: 'Eric Migicovsky: five questions for user interviews', url: 'https://www.youtube.com/watch?v=tb1oyRXVyKw', duration: '6:36' },
       { id: 'm4l2', title: 'Eric Migicovsky: three common user interview mistakes', url: 'https://www.youtube.com/watch?v=rOjp8vq2Sd8', duration: '2:07' },
       { id: 'm4l3', title: 'Aaron Levie (Box): start with something ridiculously simple', url: 'https://www.youtube.com/watch?v=BDqqYmtAsfA', duration: '2:30' },
-      { id: 'm4l4', title: 'Michael Seibel (YC): build a very lean MVP', url: 'https://www.youtube.com/watch?v=iEAW4-B_vuI', duration: '3:14' },
+      { id: 'm4l4', title: 'Michael Seibel: build a very lean MVP', url: 'https://www.youtube.com/watch?v=iEAW4-B_vuI', duration: '3:14' },
       { id: 'm4l5', title: 'Stanley Tang: lessons from starting DoorDash', url: 'https://www.youtube.com/watch?v=0xnrf0V6sEo', duration: '5:46' }
     ]
   },
@@ -73,7 +73,7 @@ const MODULES = [
     title: 'Module 7 · Pivoting',
     description: 'If you can\'t find PMF, how do you know when it\'s time to change direction?',
     lessons: [
-      { id: 'm7l1', title: 'Elad Gil (Color Health): things that work tend to work pretty fast', url: 'https://www.youtube.com/watch?v=gsAKObZcPw8', duration: '2:51' },
+      { id: 'm7l1', title: 'Elad Gil: things that work tend to work pretty fast', url: 'https://www.youtube.com/watch?v=gsAKObZcPw8', duration: '2:51' },
       { id: 'm7l2', title: 'Kevin Systrom: most successful things are pivots', url: 'https://www.youtube.com/watch?v=oHyQBqMSqeI', duration: '3:09' },
       { id: 'm7l3', title: 'Kevin Systrom: how he pivoted from Burbn to Instagram', url: 'https://www.youtube.com/watch?v=nOLF1t79PwI', duration: '4:54' }, 
       { id: 'm7l4', title: 'Ben Horowitz: the story of Slack\'s pivot from a video game', url: 'https://www.youtube.com/watch?v=5Mb69m5UoKE', duration: '3:16' },
