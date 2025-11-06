@@ -128,7 +128,7 @@ function render() {
             </div>
           </div>
         </button>
-        <a href="${l.url}" target="_blank" rel="noopener" class="text-xs px-2 py-1 rounded-lg border border-slate-300 dark:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-800">Open ↗</a>
+        <button data-open-video="${l.id}" class="flex items-center gap-1 text-xs px-2 py-1 rounded-lg border border-slate-300 dark:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-800">▶ Play</button>
       `;
       list.appendChild(row);
     });
