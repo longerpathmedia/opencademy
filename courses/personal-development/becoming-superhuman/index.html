@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenCademy — Becoming Superhuman (Free Course)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['ui-sans-serif', 'system-ui', 'Inter', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+            body: ['ui-sans-serif', 'system-ui', 'Inter', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Subtle scrollbar styling */
+    ::-webkit-scrollbar { height: 8px; width: 10px; }
+    ::-webkit-scrollbar-thumb { background: rgba(100,116,139,.4); border-radius: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+  </style>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C9L2X8BTME"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C9L2X8BTME');
+</script>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100 font-body">
+
+  <header class="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-white/70 dark:supports-[backdrop-filter]:bg-slate-900/70 border-b border-slate-200/70 dark:border-slate-700/50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center gap-3">
+      <div class="flex items-center gap-2">
+        <a href="../../../index.html" class="font-display text-xl tracking-tight">OpenCademy</a>
+      </div>
+      <div class="ml-auto flex items-center gap-2">
+        <button id="shareBtn" class="px-3 py-2 text-sm rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800">Share</button>
+        <button id="themeToggle" class="px-3 py-2 text-sm rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Toggle dark mode">Dark</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-8">
+    <!-- Hero -->
+    <section class="mb-8">
+      <div class="flex flex-col lg:flex-row items-start gap-6">
+        <div class="flex-1">
+          <h1 class="text-3xl md:text-4xl font-display font-semibold leading-tight" id="courseTitle">Becoming Superhuman</h1>
+          <p class="mt-2 text-slate-600 dark:text-slate-300 max-w-3xl">A personal operating system for energy, focus, and deliberate growth. Learn from top founders, athletes, and coaches on building sustainable systems for peak performance.</p>
+          <div class="mt-4 flex flex-wrap items-center gap-3 text-sm">
+            <span class="px-3 py-1 rounded-full bg-amber-300 dark:bg-amber-800">All Levels</span>
+            <span id="lessonCount" class="px-3 py-1 rounded-full bg-slate-200 dark:bg-slate-800">0 lessons</span>
+            <span id="totalDuration" class="px-3 py-1 rounded-full bg-slate-200 dark:bg-slate-800">—</span>
+          </div>
+        </div>
+        <div class="w-full lg:w-80">
+          <div class="p-4 rounded-2xl border border-slate-200 dark:border-slate-700 bg-white/60 dark:bg-slate-800/60 shadow-sm">
+            <div class="flex items-center justify-between">
+              <span class="font-medium">Your Progress</span>
+              <button id="resetProgress" class="text-xs underline">Reset</button>
+            </div>
+            <div class="mt-3">
+              <div class="h-3 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden">
+                <div id="overallBar" class="h-3 bg-gradient-to-r from-indigo-500 to-sky-500" style="width:0%"></div>
+              </div>
+              <div class="mt-2 text-sm text-slate-600 dark:text-slate-300"><span id="overallPct">0%</span> complete</div>
+            </div>
+            <div class="mt-4">
+              <input id="search" type="search" placeholder="Search lessons…" class="w-full rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modules render here -->
+    <section id="modules" class="space-y-6"></section>
+
+    <!-- Footer -->
+    <footer class="mt-12 pt-6 border-t border-slate-200 dark:border-slate-700">
+      <div class="flex flex-col items-center gap-4">
+        <div class="text-sm text-slate-500">
+          Curated with ❤️ for lifelong learners. Please get in touch by <a href="mailto:keeter@gmail.com" class="underline">email</a>.
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Video Modal -->
+  <div id="videoModal" class="fixed inset-0 hidden items-center justify-center bg-black/70 p-4">
+    <div class="w-full max-w-3xl rounded-2xl overflow-hidden bg-black shadow-2xl">
+      <div class="relative pt-[56.25%]">
+        <iframe id="player" class="absolute inset-0 w-full h-full" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="flex items-center justify-between bg-slate-900 text-slate-100 px-4 py-3">
+        <div id="playerTitle" class="text-sm line-clamp-1"></div>
+        <div class="flex items-center gap-2">
+          <button id="markDone" class="px-3 py-1.5 text-xs rounded-lg bg-emerald-600 hover:bg-emerald-500">Mark complete</button>
+          <button id="closeModal" class="px-3 py-1.5 text-xs rounded-lg bg-slate-700 hover:bg-slate-600">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Course Data -->
+  <script src="course-data.js"></script>
+
+  <!-- App Script -->
+  <script src="../../../app.js"></script>
+</body>
+</html>
